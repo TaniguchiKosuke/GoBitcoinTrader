@@ -5,6 +5,7 @@ import (
 	"GoBitcoinTrader/config"
 	"GoBitcoinTrader/utils"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -14,5 +15,5 @@ func main() {
 	fmt.Println(ticker)
 	fmt.Println(ticker.GetMidPrice())
 	fmt.Println(ticker.DateTime())
-	fmt.Println(ticker.TruncateDateTime())
+	fmt.Println(ticker.TruncateDateTime(time.Hour))
 }
